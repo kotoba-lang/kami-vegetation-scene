@@ -7,7 +7,7 @@
 
 (deftest smoke-test
   (testing "namespace loads"
-    (is (some? (the-ns 'vegetation-scene)))))
+    (is (some? (find-ns 'vegetation-scene)))))
 
 ;; Rust: shipped_has_all_profiles
 (deftest shipped-has-all-profiles
