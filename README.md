@@ -69,5 +69,5 @@ All 9 original Rust `#[test]`s ported 1:1 to `test/vegetation_scene_test.cljk` (
 ## Develop
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
