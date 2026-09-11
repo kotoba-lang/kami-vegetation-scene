@@ -9,7 +9,7 @@ part of the **clj-wgsl migration** (ADR-2607010930, `com-junkawasaki/root`).
 Restored. Ports the full original crate (`src/lib.rs`, 445 lines, recovered from commit
 `a8368f9c0d784dbc9d11e8fa8f407aa95c7ce4fa`) to zero-dep portable CLJC:
 
-- `src/vegetation_scene.cljc` (namespace `vegetation-scene`) — the EDN authoring surface for
+- `src/vegetation_scene.cljk` (namespace `vegetation-scene`) — the EDN authoring surface for
   `kotoba-lang/vegetation` taxonomic-profile config. Parses `:vegetation/profiles` EDN via
   `kotoba-lang/scene`'s tolerant accessors (`scene/mget` / `scene/num` / `scene/vec3` /
   `scene/root-map` / `scene/kw-key`) and merges each profile's fields onto
@@ -63,7 +63,7 @@ function here, kept only for API parity with the original.
   (`vegetation.taxonomy/{grass,fern,palm,conifer,bush,cactus,moss}`), by name.
 - `all-profile-names` — `["grass" "fern" "palm" "conifer" "bush" "cactus" "moss"]`.
 
-All 9 original Rust `#[test]`s ported 1:1 to `test/vegetation_scene_test.cljc` (+1 smoke test) —
+All 9 original Rust `#[test]`s ported 1:1 to `test/vegetation_scene_test.cljk` (+1 smoke test) —
 10 tests / 29 assertions, 0 failures.
 
 ## Develop
