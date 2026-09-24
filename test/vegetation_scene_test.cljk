@@ -2,7 +2,7 @@
   "Tests for `vegetation-scene`, ported 1:1 from the original
   `kami-vegetation-scene` Rust crate's `#[cfg(test)] mod tests` (deleted
   in kotoba-lang/kami-engine PR #82), plus a namespace-loads smoke test."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [vegetation-scene :as vegetation-scene]))
 
 (deftest smoke-test
